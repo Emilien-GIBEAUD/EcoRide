@@ -19,6 +19,16 @@ a:hover {
   text-decoration: underline;
 }
 
+body{
+  background-image: url(../img/michael-marais.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  font-family: Arial, Helvetica, sans-serif;
+}
 /* FIN partie générale ---------------------------------------------------------*/
 
 /* DEBUT HEADER ---------------------------------------------------------*/
@@ -62,13 +72,66 @@ nav a {
   width: 140px;
   padding: 5px;
   background-color: rgba(208,163,112,1);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 nav a img{
   height: 40px;
 }
-
 /* FIN HEADER ---------------------------------------------------------*/
+
+/* DEBUT MAIN ---------------------------------------------------------*/
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 5px 10px;
+}
+
+main p {
+  width: 75%;
+}
+
+#seach_bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  gap: 10px;
+  border-radius: 50px;
+  background-color: rgba(255,222,173,1);
+}
+
+#seach_bar img{
+  height: 40px;
+}
+
+#seach_bar input {
+  background-color: rgba(255,248,220,1);
+  height: 30px;
+  border: solid thin black;
+  border-radius: 20px;
+  text-align: center;
+}
+.place input {
+  width: 200px;
+}
+.date input {
+  width: 100px;
+}
+
+/* FIN MAIN ---------------------------------------------------------*/
+
+/* DEBUT FOOTER ---------------------------------------------------------*/
+footer {
+  flex-grow: 1;
+  min-width: 800px;
+  position: sticky;
+  bottom: 0;
+  height: fit-content;
+  padding: 5px 25px;
+  background-color: rgba(164,220,172,1);
+}
+/* FIN FOOTER ---------------------------------------------------------*/
 
 /*_________________________________________100_caractères_________________________________________*/
