@@ -23,16 +23,20 @@ body{
   background-image: url(../img/michael-marais.jpg);
   background-size: cover;
   background-position: center;
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  column-gap: 40px;
+  column-gap: 40px; */
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  grid-template-rows: 1fr 30px;
   font-family: Arial, Helvetica, sans-serif;
 }
 /* FIN partie générale ---------------------------------------------------------*/
 
 /* DEBUT HEADER ---------------------------------------------------------*/
 header {
+  grid-row: 1 / span 2;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,28 +88,23 @@ nav a img{
 main {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 5px 10px;
-}
-
-main p {
-  width: 75%;
 }
 
 #seach_bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 10px;
   gap: 10px;
+  padding: 0 10px;
+  width: 600px;
   border-radius: 50px;
   background-color: rgba(255,222,173,1);
 }
-
 #seach_bar img{
   height: 40px;
 }
-
 #seach_bar input {
   background-color: rgba(255,248,220,1);
   height: 30px;
@@ -120,6 +119,9 @@ main p {
   width: 100px;
 }
 
+/* .presentation {
+  background-color: rgba(255,222,173,1);
+} */
 /* FIN MAIN ---------------------------------------------------------*/
 
 /* DEBUT FOOTER ---------------------------------------------------------*/
