@@ -131,6 +131,17 @@ main {
   border: solid thin black;
   border-radius: 25px;
   font-size: large;
+  text-align: justify;
+}
+
+.pres_icon{
+  height: 60px;
+  align-self: flex-end;
+}
+.pres_img{
+  width: 204px;
+  height: 153px;
+  align-self: flex-end;
 }
 /* FIN MAIN ---------------------------------------------------------*/
 
