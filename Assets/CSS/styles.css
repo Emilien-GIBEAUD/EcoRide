@@ -24,60 +24,83 @@ body{
   background-size: cover;
   background-position: center;
   display: grid;
-  grid-template-columns: 150px 1fr;
-  grid-template-rows: 1fr 30px;
   font-family: Arial, Helvetica, sans-serif;
+}
+@media (orientation: landscape) {
+  body {
+    grid-template-columns: 100px 1fr;
+    grid-template-rows: 1fr 30px;
+  }
+}
+@media (orientation: portrait) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: 65px 1fr 30px;
+  }
 }
 /* FIN partie générale ---------------------------------------------------------*/
 
 /* DEBUT HEADER ---------------------------------------------------------*/
 header {
-  grid-row: 1 / span 2;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: rgba(188,115,33,1);
-  width: 150px;
-  height: 100vh;
 }
 
 .logo {
   display: flex;
   justify-content: center;
-}
-
-.logo_icon {
-  height: 80px;
+  padding: 0 10px;
 }
 
 nav {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-
-  font-size: 2.5rem;
-  font-weight: bold;
 }
-
 nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-
   border: solid thin black;
   border-radius: 10px;
-
-  
-  width: 140px;
-  padding: 5px;
+  width: 90px;
+  padding: 3px;
   background-color: rgba(208,163,112,1);
-  font-size: 1.25rem;
+  font-weight: bold;
+  font-size: 0.9rem;
 }
-
 nav a img{
   height: 40px;
 }
+
+@media (orientation: landscape) {
+  header {
+    grid-row: 1 / span 2;
+    flex-direction: column;
+    align-items: center;
+    width: 100px;
+    height: 100vh;
+  }
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .logo_icon {
+    height: 80px;
+  }
+}
+@media (orientation: portrait) {
+  header {
+  }
+  nav {
+    gap: 10px;
+  }
+  nav a {
+  }
+  .logo_icon {
+    height: 65px;
+  }
+}
+
 /* FIN HEADER ---------------------------------------------------------*/
 
 /* DEBUT MAIN ---------------------------------------------------------*/
@@ -85,17 +108,24 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
   padding: 5px 10px;
 }
 
 #seach_bar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 10px;
-  padding: 0 10px;
+  gap: 0 5px;
+  padding: 2px 10px;
   border-radius: 50px;
   background-color: rgba(255,222,173,1);
+}
+#seach_bar .input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2px;
 }
 #seach_bar img{
   height: 40px;
@@ -124,8 +154,9 @@ main {
 .presentation {
   display: flex;
   flex-direction: column;
-  padding: 30px;
-  width: 75%;
+  padding: 15px;
+  width: 90%;
+  max-width: 960px;
   height: fit-content;
   background-color: rgba(255,222,173,0.93);
   border: solid thin black;
@@ -153,6 +184,12 @@ footer {
   height: fit-content;
   padding: 5px 25px;
   background-color: rgba(164,220,172,1);
+}
+
+@media (orientation: portrait) {
+  footer {
+    grid-row: 3;
+  }
 }
 /* FIN FOOTER ---------------------------------------------------------*/
 
