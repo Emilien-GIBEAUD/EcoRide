@@ -125,7 +125,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2px;
+  gap: 10px;
 }
 #seach_bar img{
   height: 40px;
