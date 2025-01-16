@@ -89,13 +89,13 @@ nav a img{
   }
 }
 @media (orientation: portrait) {
-  header {
-  }
+  /* header {
+  } */
   nav {
     gap: 10px;
   }
-  nav a {
-  }
+  /* nav a {
+  } */
   .logo_icon {
     height: 65px;
   }
