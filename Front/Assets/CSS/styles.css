@@ -144,7 +144,7 @@ main {
   width: 100px;
 }
 
-.home {
+.home,.legals {
   display: flex;
   justify-content: center;
   align-items: center;

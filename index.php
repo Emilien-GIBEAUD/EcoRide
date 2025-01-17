@@ -1,37 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Emilien GIBEAUD">
-  <meta name="description" content="Cette page est la page d'accueil du site Ecoride.">
-  <link rel="stylesheet" href="./Front/Assets/CSS/styles.css">
-  <link rel="shortcut icon" href="./Front/Assets/icon/car.svg" type="image/x-icon">
-  <title>EcoRide</title>
+  <?php include "Front/main_head.html" ;?>
 </head>
 <!--_______________________________________100_caractères________________________________________-->
 <body>
   <?php include "Front/header.html" ;?>
-  <!-- <header>
-    <div class="logo">
-      <img class="logo_icon" src="./Assets/icon/carpooling.svg" alt="logo de EcoRide">
-    </div>
-
-    <nav>
-      <a href="" class="menu_button">
-        <img src="./Assets/icon/home.svg" alt="icône d'accueil">Accueil
-      </a>
-      <a href="" class="menu_button">
-        <img src="./Assets/icon/car.svg" alt="icône de voiture">Covoiturage
-      </a>
-      <a href="" class="menu_button">
-        <img src="./Assets/icon/user.svg" alt="icône de connexion">Connexion
-      </a>
-      <a href="" class="menu_button">
-        <img src="./Assets/icon/contact.svg" alt="icône de contact">Contact
-      </a>
-    </nav>
-  </header> -->
 
   <main>
     <div id="seach_bar">
@@ -55,31 +29,11 @@
         </div>
       </div>
     </div>
-
     
-  <?php include "Front/home.html" ;?>
-    <!-- <div class="home">
-      <div class="presentation">
-        <p>Notre startup EcoRide fraichement crée en France, a pour objectif de réduire l'impact environnemental des déplacements en encourageant le covoiturage.</p>
-        <img class="pres_icon" src="./Front/Assets/icon/carpooling.svg" alt="logo de EcoRide"><br>
-        <p>Chez EcoRide nous prônons une approche écologique et nous récompensons les transports en véhicule électrique.</p>
-        <img class="pres_icon" src="./Front/Assets/icon/electric-car.svg" 
-              alt="icône de voiture électrique"><br>
-        <p>L'ambition d'EcoRide est de devenir la principale plateforme de covoiturage pour les voyageurs soucieux de l'environnement et ceux qui recherchent une solution économique pour leurs déplacements.</p>
-        <img class="pres_img" src="./Front/Assets/img/pierre-borthiry-peiobty.jpg" alt="image">
-      </div>
-    </div> -->
-
+    <?php include "Front/home.html" ;?>
   </main>
 
   <?php include "Front/footer.html" ;?>
-  <!-- <footer>
-    <a href="" target="_blank" title="Lien vers le formulaire de contact">
-      contact@covoit.fr</a> | 
-      <a href="" target="_blank" title="Lien vers les mentions légales">
-        Mentions légales</a>
-  </footer> -->
-  
 </body>
 </html>
 <!--_______________________________________100_caractères________________________________________-->
