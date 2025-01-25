@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <?php include "Front/main_head.html" ;?>
+  <?php include "Vue/main_head.html" ;?>
 </head>
 <!--_______________________________________100_caractères________________________________________-->
 <body>
-  <?php include "Front/header.html" ;?>
+  <?php include "Vue/header.html" ;?>
 
   <main>
-  <?php include "Front/legals.html" ;?>
+  <?php include "Vue/legals.html" ;?>
   </main>
 
 </body>

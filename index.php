@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <?php include "Front/main_head.html" ;?>
+  <?php include "Vue/main_head.html" ;?>
 </head>
 <!--_______________________________________100_caractères________________________________________-->
 <body>
-  <?php include "Front/header.html" ;?>
+  <?php include "Vue/header.html" ;?>
 
   <main>
     <div id="seach_bar">
-      <img src="./Front/Assets/icon/search.svg" alt="icône de recherche">
+      <img src="./Vue/Assets/icon/search.svg" alt="icône de recherche">
       <div class="input">
         <div class="place">
           <label for="dep_place"></label>
@@ -30,10 +30,10 @@
       </div>
     </div>
     
-    <?php include "Front/home.html" ;?>
+    <?php include "Vue/home.html" ;?>
   </main>
 
-  <?php include "Front/footer.html" ;?>
+  <?php include "Vue/footer.html" ;?>
 </body>
 </html>
 <!--_______________________________________100_caractères________________________________________-->
