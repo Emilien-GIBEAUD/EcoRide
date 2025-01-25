@@ -1,0 +1,1 @@
+These files manage the interaction between the User, the View and the Model. They treat the user requests, fetch the datas from the Model and send them to the View.

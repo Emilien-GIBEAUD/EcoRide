@@ -1,0 +1,1 @@
+These files manage the View of the application, they fetch the data from the Model (via the Controller) and display them to the User.

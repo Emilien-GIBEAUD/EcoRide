@@ -1,0 +1,1 @@
+These files manage the data of the application, they manage the storage and manipulation of the data.
