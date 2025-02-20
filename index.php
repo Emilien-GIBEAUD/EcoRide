@@ -1,11 +1,19 @@
+<?php
+    // Inclusion de la config
+    require_once './Config/config.php';
+
+    // Inclusion du controlleur principal
+    require_once CONTROLLER_PATH . 'main_Controller.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <?php include "View/main_head.html" ;?>
+  <?php include "View/main_head.php" ;?>
 </head>
 <!--_______________________________________100_caractères________________________________________-->
 <body>
-  <?php include "View/header.html" ;?>
+  <?php include "View/header.php" ;?>
 
   <main>
     <div id="seach_bar">
@@ -30,10 +38,10 @@
       </div>
     </div>
     
-    <?php include "View/home.html" ;?>
+    <?php include "View/home.php" ;?>
   </main>
 
-  <?php include "View/footer.html" ;?>
+  <?php include "View/footer.php" ;?>
 </body>
 </html>
 <!--_______________________________________100_caractères________________________________________-->
